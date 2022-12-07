@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(track_volume));
-            this.btn_preview = new System.Windows.Forms.Button();
+            this.btn_previous = new System.Windows.Forms.Button();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_play = new System.Windows.Forms.Button();
             this.btn_pause = new System.Windows.Forms.Button();
@@ -52,17 +52,18 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_preview
+            // btn_previous
             // 
-            this.btn_preview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_preview.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_preview.Location = new System.Drawing.Point(28, 378);
-            this.btn_preview.Name = "btn_preview";
-            this.btn_preview.Size = new System.Drawing.Size(85, 29);
-            this.btn_preview.TabIndex = 0;
-            this.btn_preview.Text = "Preview";
-            this.btn_preview.UseVisualStyleBackColor = true;
+            this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_previous.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_previous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_previous.Location = new System.Drawing.Point(28, 378);
+            this.btn_previous.Name = "btn_previous";
+            this.btn_previous.Size = new System.Drawing.Size(85, 29);
+            this.btn_previous.TabIndex = 0;
+            this.btn_previous.Text = "Previous";
+            this.btn_previous.UseVisualStyleBackColor = true;
+            this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
             // 
             // btn_next
             // 
@@ -75,6 +76,7 @@
             this.btn_next.TabIndex = 1;
             this.btn_next.Text = "Next";
             this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // btn_play
             // 
@@ -87,6 +89,7 @@
             this.btn_play.TabIndex = 2;
             this.btn_play.Text = "Play";
             this.btn_play.UseVisualStyleBackColor = true;
+            this.btn_play.Click += new System.EventHandler(this.btn_play_Click);
             // 
             // btn_pause
             // 
@@ -99,6 +102,7 @@
             this.btn_pause.TabIndex = 3;
             this.btn_pause.Text = "Pause";
             this.btn_pause.UseVisualStyleBackColor = true;
+            this.btn_pause.Click += new System.EventHandler(this.btn_pause_Click);
             // 
             // btn_stop
             // 
@@ -111,6 +115,7 @@
             this.btn_stop.TabIndex = 4;
             this.btn_stop.Text = "Stop";
             this.btn_stop.UseVisualStyleBackColor = true;
+            this.btn_stop.Click += new System.EventHandler(this.btn_stop_Click);
             // 
             // btn_open
             // 
@@ -260,7 +265,7 @@
             this.Controls.Add(this.btn_pause);
             this.Controls.Add(this.btn_play);
             this.Controls.Add(this.btn_next);
-            this.Controls.Add(this.btn_preview);
+            this.Controls.Add(this.btn_previous);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.player);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -279,7 +284,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_preview;
+        private System.Windows.Forms.Button btn_previous;
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_play;
         private System.Windows.Forms.Button btn_pause;
