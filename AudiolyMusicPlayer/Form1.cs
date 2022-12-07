@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AudiolyMusicPlayer
 {
-    public partial class Form1 : Form
+    public partial class track_volume : Form
     {
-        public Form1()
+        public track_volume()
         {
             InitializeComponent();
         }

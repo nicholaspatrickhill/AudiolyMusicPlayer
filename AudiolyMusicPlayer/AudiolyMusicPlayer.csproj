@@ -102,5 +102,14 @@
   <ItemGroup>
     <None Include="Resources\45rpm.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compact-disc-circle-black-cd-album-transparent-background-png-black-discs-png-800_800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recorddark.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
