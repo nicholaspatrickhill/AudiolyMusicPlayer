@@ -16,6 +16,8 @@ namespace AudiolyMusicPlayer
         public track_volume()
         {
             InitializeComponent();
+            trackBar1.Value = 50;
+            lbl_volume.Text = "50%";
         }
 
         string[] paths, files;
@@ -64,6 +66,35 @@ namespace AudiolyMusicPlayer
             {
                 track_list.SelectedIndex = track_list.SelectedIndex - 1;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (player.playState==WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                p_bar.Maximum = (int)player.Ctlcontrols.currentItem.duration;
+                p_bar.Value = (int)player.Ctlcontrols.currentPosition;
+            }
+            try
+            {
+                lbl_track_start.Text = player.Ctlcontrols.currentPositionString;
+                lbl_track_end.Text = player.Ctlcontrols.currentItem.durationString.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            player.settings.volume = trackBar1.Value;
+            lbl_volume.Text = trackBar1.Value.ToString() + "%";
+        }
+
+        private void p_bar_MouseDown(object sender, MouseEventArgs e)
+        {
+            player.Ctlcontrols.currentPosition = player.currentMedia.duration * e.X / p_bar.Width;
         }
 
         private void track_list_SelectedIndexChanged(object sender, EventArgs e)

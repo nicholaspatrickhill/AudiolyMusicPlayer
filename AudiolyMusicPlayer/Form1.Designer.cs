@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(track_volume));
             this.btn_previous = new System.Windows.Forms.Button();
             this.btn_next = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             this.lbl_track_end = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_art)).BeginInit();
@@ -136,6 +138,7 @@
             this.p_bar.Name = "p_bar";
             this.p_bar.Size = new System.Drawing.Size(623, 16);
             this.p_bar.TabIndex = 6;
+            this.p_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.p_bar_MouseDown);
             // 
             // track_list
             // 
@@ -157,7 +160,7 @@
             this.player.Location = new System.Drawing.Point(0, 0);
             this.player.Name = "player";
             this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            this.player.Size = new System.Drawing.Size(683, 58);
+            this.player.Size = new System.Drawing.Size(684, 179);
             this.player.TabIndex = 9;
             this.player.Visible = false;
             // 
@@ -171,6 +174,7 @@
             this.trackBar1.Size = new System.Drawing.Size(56, 193);
             this.trackBar1.TabIndex = 10;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // label1
             // 
@@ -192,7 +196,7 @@
             this.lbl_volume.ForeColor = System.Drawing.Color.White;
             this.lbl_volume.Location = new System.Drawing.Point(614, 18);
             this.lbl_volume.Name = "lbl_volume";
-            this.lbl_volume.Size = new System.Drawing.Size(59, 20);
+            this.lbl_volume.Size = new System.Drawing.Size(47, 16);
             this.lbl_volume.TabIndex = 12;
             this.lbl_volume.Text = "  100%";
             // 
@@ -252,10 +256,15 @@
             this.lbl_name.TabIndex = 16;
             this.lbl_name.Text = "Audioly";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // track_volume
             // 
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(683, 433);
+            this.ClientSize = new System.Drawing.Size(684, 437);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.lbl_track_end);
             this.Controls.Add(this.lbl_track_start);
@@ -301,6 +310,7 @@
         private System.Windows.Forms.Label lbl_track_end;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
