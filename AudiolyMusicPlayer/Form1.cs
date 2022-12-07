@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AudiolyMusicPlayer
 {
@@ -40,6 +41,7 @@ namespace AudiolyMusicPlayer
         private void btn_stop_Click(object sender, EventArgs e)
         {
             player.Ctlcontrols.stop();
+            p_bar.Value = 0;
         }
 
         private void btn_pause_Click(object sender, EventArgs e)

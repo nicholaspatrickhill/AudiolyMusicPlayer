@@ -42,7 +42,6 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_volume = new System.Windows.Forms.Label();
-            this.pic_art = new System.Windows.Forms.PictureBox();
             this.lbl_track_start = new System.Windows.Forms.Label();
             this.lbl_track_end = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -50,14 +49,13 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_art)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_previous
             // 
             this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_previous.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_previous.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_previous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_previous.Location = new System.Drawing.Point(28, 378);
             this.btn_previous.Name = "btn_previous";
@@ -70,7 +68,7 @@
             // btn_next
             // 
             this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_next.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_next.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_next.Location = new System.Drawing.Point(119, 378);
             this.btn_next.Name = "btn_next";
@@ -83,7 +81,7 @@
             // btn_play
             // 
             this.btn_play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_play.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_play.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_play.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_play.Location = new System.Drawing.Point(210, 378);
             this.btn_play.Name = "btn_play";
@@ -96,7 +94,7 @@
             // btn_pause
             // 
             this.btn_pause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pause.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pause.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_pause.Location = new System.Drawing.Point(301, 378);
             this.btn_pause.Name = "btn_pause";
@@ -109,7 +107,7 @@
             // btn_stop
             // 
             this.btn_stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_stop.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_stop.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_stop.Location = new System.Drawing.Point(392, 378);
             this.btn_stop.Name = "btn_stop";
@@ -122,7 +120,7 @@
             // btn_open
             // 
             this.btn_open.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_open.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_open.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_open.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_open.Location = new System.Drawing.Point(483, 378);
             this.btn_open.Name = "btn_open";
@@ -147,9 +145,9 @@
             this.track_list.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.track_list.FormattingEnabled = true;
             this.track_list.ItemHeight = 16;
-            this.track_list.Location = new System.Drawing.Point(215, 33);
+            this.track_list.Location = new System.Drawing.Point(28, 18);
             this.track_list.Name = "track_list";
-            this.track_list.Size = new System.Drawing.Size(396, 208);
+            this.track_list.Size = new System.Drawing.Size(576, 224);
             this.track_list.TabIndex = 7;
             this.track_list.SelectedIndexChanged += new System.EventHandler(this.track_list_SelectedIndexChanged);
             // 
@@ -200,22 +198,12 @@
             this.lbl_volume.TabIndex = 12;
             this.lbl_volume.Text = "  100%";
             // 
-            // pic_art
-            // 
-            this.pic_art.Image = global::AudiolyMusicPlayer.Properties.Resources.compact_disc_circle_black_cd_album_transparent_background_png_black_discs_png_800_800;
-            this.pic_art.Location = new System.Drawing.Point(12, 33);
-            this.pic_art.Name = "pic_art";
-            this.pic_art.Size = new System.Drawing.Size(197, 197);
-            this.pic_art.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_art.TabIndex = 8;
-            this.pic_art.TabStop = false;
-            // 
             // lbl_track_start
             // 
             this.lbl_track_start.AutoSize = true;
             this.lbl_track_start.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_track_start.ForeColor = System.Drawing.Color.Lime;
-            this.lbl_track_start.Location = new System.Drawing.Point(20, 5);
+            this.lbl_track_start.Location = new System.Drawing.Point(20, 10);
             this.lbl_track_start.Name = "lbl_track_start";
             this.lbl_track_start.Size = new System.Drawing.Size(112, 48);
             this.lbl_track_start.TabIndex = 13;
@@ -235,7 +223,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.pic_art);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbl_volume);
             this.panel1.Controls.Add(this.track_list);
@@ -282,7 +269,6 @@
             this.Text = "Audioly Music Player";
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_art)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -301,7 +287,6 @@
         private System.Windows.Forms.Button btn_open;
         private System.Windows.Forms.ProgressBar p_bar;
         private System.Windows.Forms.ListBox track_list;
-        private System.Windows.Forms.PictureBox pic_art;
         private AxWMPLib.AxWindowsMediaPlayer player;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label label1;
