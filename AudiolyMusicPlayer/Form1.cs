@@ -33,5 +33,12 @@ namespace AudiolyMusicPlayer
                 }
             }
         }
+
+        private void track_list_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            player.URL = paths[track_list.SelectedIndex];
+            player.Ctlcontrols.play();
+
+        }
     }
 }
