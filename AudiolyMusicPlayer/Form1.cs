@@ -99,6 +99,11 @@ namespace AudiolyMusicPlayer
             player.Ctlcontrols.currentPosition = player.currentMedia.duration * e.X / p_bar.Width;
         }
 
+        private void clear_Click(object sender, EventArgs e)
+        {
+            track_list.Items.Clear();
+        }
+
         private void track_list_SelectedIndexChanged(object sender, EventArgs e)
         {
             player.URL = paths[track_list.SelectedIndex];

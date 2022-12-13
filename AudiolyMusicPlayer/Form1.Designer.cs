@@ -47,6 +47,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -57,7 +58,7 @@
             this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_previous.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_previous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_previous.Location = new System.Drawing.Point(28, 378);
+            this.btn_previous.Location = new System.Drawing.Point(12, 378);
             this.btn_previous.Name = "btn_previous";
             this.btn_previous.Size = new System.Drawing.Size(85, 29);
             this.btn_previous.TabIndex = 0;
@@ -70,7 +71,7 @@
             this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_next.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_next.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_next.Location = new System.Drawing.Point(119, 378);
+            this.btn_next.Location = new System.Drawing.Point(103, 378);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(85, 29);
             this.btn_next.TabIndex = 1;
@@ -83,7 +84,7 @@
             this.btn_play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_play.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_play.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_play.Location = new System.Drawing.Point(210, 378);
+            this.btn_play.Location = new System.Drawing.Point(194, 378);
             this.btn_play.Name = "btn_play";
             this.btn_play.Size = new System.Drawing.Size(85, 29);
             this.btn_play.TabIndex = 2;
@@ -96,7 +97,7 @@
             this.btn_pause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_pause.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_pause.Location = new System.Drawing.Point(301, 378);
+            this.btn_pause.Location = new System.Drawing.Point(285, 378);
             this.btn_pause.Name = "btn_pause";
             this.btn_pause.Size = new System.Drawing.Size(85, 29);
             this.btn_pause.TabIndex = 3;
@@ -109,7 +110,7 @@
             this.btn_stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_stop.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_stop.Location = new System.Drawing.Point(392, 378);
+            this.btn_stop.Location = new System.Drawing.Point(376, 378);
             this.btn_stop.Name = "btn_stop";
             this.btn_stop.Size = new System.Drawing.Size(85, 29);
             this.btn_stop.TabIndex = 4;
@@ -122,9 +123,9 @@
             this.btn_open.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_open.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_open.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_open.Location = new System.Drawing.Point(483, 378);
+            this.btn_open.Location = new System.Drawing.Point(558, 378);
             this.btn_open.Name = "btn_open";
-            this.btn_open.Size = new System.Drawing.Size(168, 29);
+            this.btn_open.Size = new System.Drawing.Size(115, 29);
             this.btn_open.TabIndex = 5;
             this.btn_open.Text = "Open";
             this.btn_open.UseVisualStyleBackColor = true;
@@ -132,9 +133,9 @@
             // 
             // p_bar
             // 
-            this.p_bar.Location = new System.Drawing.Point(28, 347);
+            this.p_bar.Location = new System.Drawing.Point(12, 347);
             this.p_bar.Name = "p_bar";
-            this.p_bar.Size = new System.Drawing.Size(623, 16);
+            this.p_bar.Size = new System.Drawing.Size(661, 16);
             this.p_bar.TabIndex = 6;
             this.p_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.p_bar_MouseDown);
             // 
@@ -203,7 +204,7 @@
             this.lbl_track_start.AutoSize = true;
             this.lbl_track_start.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_track_start.ForeColor = System.Drawing.Color.Lime;
-            this.lbl_track_start.Location = new System.Drawing.Point(20, 10);
+            this.lbl_track_start.Location = new System.Drawing.Point(29, 10);
             this.lbl_track_start.Name = "lbl_track_start";
             this.lbl_track_start.Size = new System.Drawing.Size(112, 48);
             this.lbl_track_start.TabIndex = 13;
@@ -248,10 +249,24 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // clear
+            // 
+            this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clear.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.clear.Location = new System.Drawing.Point(467, 378);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(85, 29);
+            this.clear.TabIndex = 17;
+            this.clear.Text = "Clear";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
             // track_volume
             // 
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(684, 437);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.lbl_track_end);
             this.Controls.Add(this.lbl_track_start);
@@ -296,6 +311,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button clear;
     }
 }
 
