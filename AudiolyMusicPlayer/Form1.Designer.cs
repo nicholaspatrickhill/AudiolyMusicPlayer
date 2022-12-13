@@ -58,9 +58,9 @@
             this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_previous.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_previous.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_previous.Location = new System.Drawing.Point(12, 378);
+            this.btn_previous.Location = new System.Drawing.Point(64, 599);
             this.btn_previous.Name = "btn_previous";
-            this.btn_previous.Size = new System.Drawing.Size(85, 29);
+            this.btn_previous.Size = new System.Drawing.Size(121, 37);
             this.btn_previous.TabIndex = 0;
             this.btn_previous.Text = "Previous";
             this.btn_previous.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_next.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_next.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_next.Location = new System.Drawing.Point(103, 378);
+            this.btn_next.Location = new System.Drawing.Point(191, 599);
             this.btn_next.Name = "btn_next";
-            this.btn_next.Size = new System.Drawing.Size(85, 29);
+            this.btn_next.Size = new System.Drawing.Size(121, 37);
             this.btn_next.TabIndex = 1;
             this.btn_next.Text = "Next";
             this.btn_next.UseVisualStyleBackColor = true;
@@ -84,9 +84,9 @@
             this.btn_play.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_play.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_play.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_play.Location = new System.Drawing.Point(194, 378);
+            this.btn_play.Location = new System.Drawing.Point(318, 599);
             this.btn_play.Name = "btn_play";
-            this.btn_play.Size = new System.Drawing.Size(85, 29);
+            this.btn_play.Size = new System.Drawing.Size(121, 37);
             this.btn_play.TabIndex = 2;
             this.btn_play.Text = "Play";
             this.btn_play.UseVisualStyleBackColor = true;
@@ -97,9 +97,9 @@
             this.btn_pause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_pause.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_pause.Location = new System.Drawing.Point(285, 378);
+            this.btn_pause.Location = new System.Drawing.Point(445, 599);
             this.btn_pause.Name = "btn_pause";
-            this.btn_pause.Size = new System.Drawing.Size(85, 29);
+            this.btn_pause.Size = new System.Drawing.Size(121, 37);
             this.btn_pause.TabIndex = 3;
             this.btn_pause.Text = "Pause";
             this.btn_pause.UseVisualStyleBackColor = true;
@@ -110,9 +110,9 @@
             this.btn_stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_stop.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_stop.Location = new System.Drawing.Point(376, 378);
+            this.btn_stop.Location = new System.Drawing.Point(572, 599);
             this.btn_stop.Name = "btn_stop";
-            this.btn_stop.Size = new System.Drawing.Size(85, 29);
+            this.btn_stop.Size = new System.Drawing.Size(121, 37);
             this.btn_stop.TabIndex = 4;
             this.btn_stop.Text = "Stop";
             this.btn_stop.UseVisualStyleBackColor = true;
@@ -124,9 +124,9 @@
             this.btn_open.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_open.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_open.ForeColor = System.Drawing.Color.Black;
-            this.btn_open.Location = new System.Drawing.Point(558, 378);
+            this.btn_open.Location = new System.Drawing.Point(826, 599);
             this.btn_open.Name = "btn_open";
-            this.btn_open.Size = new System.Drawing.Size(115, 29);
+            this.btn_open.Size = new System.Drawing.Size(151, 37);
             this.btn_open.TabIndex = 5;
             this.btn_open.Text = "Open";
             this.btn_open.UseVisualStyleBackColor = false;
@@ -134,9 +134,9 @@
             // 
             // p_bar
             // 
-            this.p_bar.Location = new System.Drawing.Point(12, 347);
+            this.p_bar.Location = new System.Drawing.Point(64, 566);
             this.p_bar.Name = "p_bar";
-            this.p_bar.Size = new System.Drawing.Size(661, 16);
+            this.p_bar.Size = new System.Drawing.Size(913, 16);
             this.p_bar.TabIndex = 6;
             this.p_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.p_bar_MouseDown);
             // 
@@ -144,12 +144,13 @@
             // 
             this.track_list.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.track_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.track_list.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.track_list.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.track_list.FormattingEnabled = true;
-            this.track_list.ItemHeight = 16;
-            this.track_list.Location = new System.Drawing.Point(28, 18);
+            this.track_list.ItemHeight = 19;
+            this.track_list.Location = new System.Drawing.Point(37, 13);
             this.track_list.Name = "track_list";
-            this.track_list.Size = new System.Drawing.Size(576, 224);
+            this.track_list.Size = new System.Drawing.Size(911, 437);
             this.track_list.TabIndex = 7;
             this.track_list.SelectedIndexChanged += new System.EventHandler(this.track_list_SelectedIndexChanged);
             // 
@@ -160,18 +161,18 @@
             this.player.Location = new System.Drawing.Point(0, 0);
             this.player.Name = "player";
             this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
-            this.player.Size = new System.Drawing.Size(684, 179);
+            this.player.Size = new System.Drawing.Size(1038, 179);
             this.player.TabIndex = 9;
             this.player.Visible = false;
             // 
             // trackBar1
             // 
             this.trackBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.trackBar1.Location = new System.Drawing.Point(617, 37);
+            this.trackBar1.Location = new System.Drawing.Point(970, 32);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(56, 193);
+            this.trackBar1.Size = new System.Drawing.Size(56, 415);
             this.trackBar1.TabIndex = 10;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
@@ -182,7 +183,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(614, 233);
+            this.label1.Location = new System.Drawing.Point(970, 450);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 11;
@@ -194,9 +195,9 @@
             this.lbl_volume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lbl_volume.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_volume.ForeColor = System.Drawing.Color.White;
-            this.lbl_volume.Location = new System.Drawing.Point(614, 18);
+            this.lbl_volume.Location = new System.Drawing.Point(967, 13);
             this.lbl_volume.Name = "lbl_volume";
-            this.lbl_volume.Size = new System.Drawing.Size(64, 20);
+            this.lbl_volume.Size = new System.Drawing.Size(51, 16);
             this.lbl_volume.TabIndex = 12;
             this.lbl_volume.Text = "   100%";
             // 
@@ -216,7 +217,7 @@
             this.lbl_track_end.AutoSize = true;
             this.lbl_track_end.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_track_end.ForeColor = System.Drawing.Color.Lime;
-            this.lbl_track_end.Location = new System.Drawing.Point(571, 10);
+            this.lbl_track_end.Location = new System.Drawing.Point(926, 10);
             this.lbl_track_end.Name = "lbl_track_end";
             this.lbl_track_end.Size = new System.Drawing.Size(112, 48);
             this.lbl_track_end.TabIndex = 14;
@@ -231,7 +232,7 @@
             this.panel1.Controls.Add(this.trackBar1);
             this.panel1.Location = new System.Drawing.Point(0, 61);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(706, 267);
+            this.panel1.Size = new System.Drawing.Size(1049, 483);
             this.panel1.TabIndex = 15;
             // 
             // lbl_name
@@ -239,7 +240,7 @@
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbl_name.Location = new System.Drawing.Point(251, 9);
+            this.lbl_name.Location = new System.Drawing.Point(420, 9);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(195, 48);
             this.lbl_name.TabIndex = 16;
@@ -255,9 +256,9 @@
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_clear.Location = new System.Drawing.Point(467, 378);
+            this.btn_clear.Location = new System.Drawing.Point(699, 599);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(85, 29);
+            this.btn_clear.Size = new System.Drawing.Size(121, 37);
             this.btn_clear.TabIndex = 17;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
@@ -266,7 +267,7 @@
             // track_volume
             // 
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(684, 437);
+            this.ClientSize = new System.Drawing.Size(1038, 657);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.lbl_track_end);
