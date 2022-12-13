@@ -47,7 +47,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.clear = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -120,15 +120,16 @@
             // 
             // btn_open
             // 
+            this.btn_open.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_open.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_open.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_open.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_open.ForeColor = System.Drawing.Color.Black;
             this.btn_open.Location = new System.Drawing.Point(558, 378);
             this.btn_open.Name = "btn_open";
             this.btn_open.Size = new System.Drawing.Size(115, 29);
             this.btn_open.TabIndex = 5;
             this.btn_open.Text = "Open";
-            this.btn_open.UseVisualStyleBackColor = true;
+            this.btn_open.UseVisualStyleBackColor = false;
             this.btn_open.Click += new System.EventHandler(this.btn_open_Click);
             // 
             // p_bar
@@ -195,9 +196,9 @@
             this.lbl_volume.ForeColor = System.Drawing.Color.White;
             this.lbl_volume.Location = new System.Drawing.Point(614, 18);
             this.lbl_volume.Name = "lbl_volume";
-            this.lbl_volume.Size = new System.Drawing.Size(47, 16);
+            this.lbl_volume.Size = new System.Drawing.Size(64, 20);
             this.lbl_volume.TabIndex = 12;
-            this.lbl_volume.Text = "  100%";
+            this.lbl_volume.Text = "   100%";
             // 
             // lbl_track_start
             // 
@@ -249,24 +250,24 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // clear
+            // btn_clear
             // 
-            this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clear.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.clear.Location = new System.Drawing.Point(467, 378);
-            this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(85, 29);
-            this.clear.TabIndex = 17;
-            this.clear.Text = "Clear";
-            this.clear.UseVisualStyleBackColor = true;
-            this.clear.Click += new System.EventHandler(this.clear_Click);
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_clear.Location = new System.Drawing.Point(467, 378);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(85, 29);
+            this.btn_clear.TabIndex = 17;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // track_volume
             // 
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(684, 437);
-            this.Controls.Add(this.clear);
+            this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.lbl_track_end);
             this.Controls.Add(this.lbl_track_start);
@@ -311,7 +312,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button btn_clear;
     }
 }
 

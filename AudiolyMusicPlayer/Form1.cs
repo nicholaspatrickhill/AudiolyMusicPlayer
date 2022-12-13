@@ -18,7 +18,7 @@ namespace AudiolyMusicPlayer
         {
             InitializeComponent();
             trackBar1.Value = 50;
-            lbl_volume.Text = "50%";
+            lbl_volume.Text = "   50%";
         }
 
         string[] paths, files;
@@ -91,7 +91,7 @@ namespace AudiolyMusicPlayer
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             player.settings.volume = trackBar1.Value;
-            lbl_volume.Text = trackBar1.Value.ToString() + "%";
+            lbl_volume.Text = "   " + trackBar1.Value.ToString() + "%";
         }
 
         private void p_bar_MouseDown(object sender, MouseEventArgs e)
@@ -99,7 +99,7 @@ namespace AudiolyMusicPlayer
             player.Ctlcontrols.currentPosition = player.currentMedia.duration * e.X / p_bar.Width;
         }
 
-        private void clear_Click(object sender, EventArgs e)
+        private void btn_clear_Click(object sender, EventArgs e)
         {
             track_list.Items.Clear();
         }
