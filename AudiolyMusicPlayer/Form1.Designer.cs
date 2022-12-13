@@ -240,7 +240,7 @@
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("Magneto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbl_name.Location = new System.Drawing.Point(420, 9);
+            this.lbl_name.Location = new System.Drawing.Point(437, 9);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(195, 48);
             this.lbl_name.TabIndex = 16;
